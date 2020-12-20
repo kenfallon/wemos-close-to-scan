@@ -1,6 +1,9 @@
 # wemos-close-to-scan
 Use a Wemos to monitor if the lid is open or closed on a network scanner.
 
+- https://github.com/kenfallon/wemos-close-to-scan
+- https://hackerpublicradio.org/eps.php?id=3275
+
 ## History
 
 In episode [hpr2430 :: Scanning books](http://hackerpublicradio.org/eps.php?id=2430), I had a bash file trigger a network scan. This required two steps, one to close the lid and the next to press a key for [scantoimage.bash](scantoimage.bash) to trigger the next page of the scan.
@@ -31,7 +34,6 @@ Have a sensor wire go from the 10K resistor to pin D5 on the D1 Mini.
 
 ![circuitdiagram](circuitdiagram.png "Circuit Diagram")
 
-
 ![breadboard](breadboard.png "Breadboard")
 
 ![photo](photo.png "Photo")
@@ -50,6 +52,6 @@ See [wemos-scantoimage.bash](wemos-scantoimage.bash)
 
 1. Plug in D1 Mini and monitor the serial port to get it's IP Address. 
 1. Change the `server="YOUR-WEMOS-IP-ADDRESS"` in [wemos-scantoimage.bash](wemos-scantoimage.bash) to the ip address.
-1. Change the `image_path="/PATH/TO/YOUR/SCANS/" in [wemos-scantoimage.bash](wemos-scantoimage.bash) to where your want the files saved.
+1. Change the `image_path="/PATH/TO/YOUR/SCANS/"` in [wemos-scantoimage.bash](wemos-scantoimage.bash) to where your want the files saved.
 1. Close scanner and scan.
 
